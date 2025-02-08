@@ -21,3 +21,7 @@ Backend:Flask (Python)
 Frontend: HTML 
 Web Requests: Python requests module  
 
+![Project Screenshot](https://raw.githubusercontent.com/CRYPTMAN297/Security-Header-Analyzer/main/Snapshot1.png)
+![Project Screenshot](https://raw.githubusercontent.com/CRYPTMAN297/Security-Header-Analyzer/main/Snapshot4.png)
+![Project Screenshot](https://raw.githubusercontent.com/CRYPTMAN297/Security-Header-Analyzer/main/Snapshot3.png)
+![Project Screenshot](https://raw.githubusercontent.com/CRYPTMAN297/Security-Header-Analyzer/main/Snapshot2.png)
