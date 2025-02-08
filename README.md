@@ -2,7 +2,7 @@
 ##  Project Description  
 The *Security Header Analyzer* is a web-based tool that helps users analyze the security headers of any website.  
 Security headers are essential for protecting web applications from attacks such as *Cross-Site Scripting (XSS), Clickjacking, and MIME-type sniffing*.  
-This tool helps website owners, security professionals, and ethical hackers identify missing security measures and provides recommendations for improvement.  
+This tool helps website owners, security professionals, and ethical hackers identify missing security measures.  
 
 ### Features  
 Enter a website URL to analyze its security headers.  
