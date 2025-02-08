@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Header Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; padding: 20px; }
+        h2 { color: #333; }
+        input { padding: 10px; width: 60%; }
+        button { padding: 10px 20px; background: blue; color: white; border: none; cursor: pointer; }
+        table { width: 60%; margin: 20px auto; border-collapse: collapse; background: white; }
+        th, td { padding: 10px; border: 1px solid #ddd; }
+        th { background: #333; color: white; }
+        .found { color: green; }
+        .missing { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Security Header Analyzer</h2>
+    <form method="post">
+        <input type="text" name="url" placeholder="Enter website URL (without https://)" required>
+        <button type="submit">Check Security Headers</button>
+    </form>
+
+    {% if headers %}
+        <h3>Results for: {{ url }}</h3>
+        <table>
+            <tr>
+                <th>Header</th>
+                <th>Status</th>
+            </tr>
+            {% for header, value in headers.items() %}
+                <tr>
+                    <td>{{ header }}</td>
+                    <td class="{{ 'found' if value != 'Not Found' else 'missing' }}">
+                        {{ "✔ Present" if value != "Not Found" else "✘ Missing" }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>
